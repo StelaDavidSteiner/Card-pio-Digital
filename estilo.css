@@ -6,36 +6,53 @@ body {
     text-align: center;
 }
 
-
 header {
     background: #8B4513;
     color: #FFD700;
     padding: 20px 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier', sans-serif;
 }
-
-
-nav {
-    margin: 20px 0;
-}
-
 
 nav a {
-    margin: 0 15px;
-    color: #FFD700;
+    margin: 0 20px;
+    padding: 10px 20px;
+    background-color: #f89717d0;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
     text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+} 
+nav a:hover {
+    background-color: #8B4513;
 }
 
+.cardapio-duplo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+.cardapio-duplo section {
+    flex: 1;
+    min-width: 280px;
+    background-color: #f89717d0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 section {
     padding: 20px;
     margin: 20px auto;
-    background: #fff;
+    background-color: #f89717d0;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
 }
-
 
 .gallery img {
     width: 100%;
@@ -44,45 +61,18 @@ section {
     border-radius: 5px;
 }
 
-
-.social-buttons {
-    margin-top: 10px;
-    text-align: center;
-}
-
-
 .social-buttons a {
     text-decoration: none;
     margin-right: 10px;
     padding: 10px;
-    background-color: #007bff;
-    color: white;
+    background-color: #8B4513;
+    color: rgb(255, 255, 255);
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
-
-
-.social-buttons a.instagram {
-    background-color: #8B4513;
-}
-
-
-.social-buttons a.instagram:hover {
+.social-buttons a:hover {
     background-color: #f89717d0;
 }
-
-
-
-
-.social-buttons a.facebook {
-    background-color: #8B4513;
-}
-
-
-.social-buttons a.facebook:hover {
-    background-color: #f89717d0;
-}
-
 
 .phone-button {
     display: inline-block;
@@ -91,4 +81,7 @@ section {
     color: white;
     border-radius: 5px;
     text-decoration: none;
+}
+.phone-button:hover {
+    background-color: #64f340d0;
 }
