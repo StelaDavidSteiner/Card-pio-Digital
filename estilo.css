@@ -2,86 +2,130 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: #F7E6A1;
     text-align: center;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
 header {
     background: #8B4513;
     color: #FFD700;
-    padding: 20px 0;
-    font-family: 'Courier', sans-serif;
+    padding: 30px 0;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 nav a {
-    margin: 0 20px;
-    padding: 10px 20px;
-    background-color: #f89717d0;
+    margin: 0 10px;
+    padding: 12px 25px;
+    background-color: #DAA520;
     color: #fff;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
-} 
+    display: inline-block;
+}
+
 nav a:hover {
     background-color: #8B4513;
 }
 
-.cardapio-duplo {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin: 20px auto;
-    max-width: 1000px;
+.texto {
+    background-color: rgba(139, 69, 19, 0.8);
+    color: #FFD700;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 30px auto;
 }
-.cardapio-duplo section {
-    flex: 1;
-    min-width: 280px;
-    background-color: #f89717d0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+.texto h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2.3rem;
+    line-height: 1.6;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.texto h3 {
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
 }
 
 section {
     padding: 20px;
     margin: 20px auto;
-    background-color: #f89717d0;
+    background-color: #F4A300;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
+}
+.cardapio-duplo {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+.cardapio-duplo section {
+    flex: 1;
+    min-width: 280px;
+    background-color: #F4A300;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 .gallery img {
     width: 100%;
     max-width: 300px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .social-buttons a {
     text-decoration: none;
-    margin-right: 10px;
-    padding: 10px;
+    margin-right: 15px;
+    padding: 12px 20px;
     background-color: #8B4513;
     color: rgb(255, 255, 255);
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
 }
+
+
 .social-buttons a:hover {
-    background-color: #f89717d0;
+    background-color: #DAA520;
 }
 
 .phone-button {
     display: inline-block;
-    padding: 10px;
-    background-color: #28a745;
+    padding: 12px 25px;
+    background-color: #FF8C00;
     color: white;
     border-radius: 5px;
     text-decoration: none;
 }
+
 .phone-button:hover {
-    background-color: #64f340d0;
+    background-color: #FF7F00;
 }
